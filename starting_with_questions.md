@@ -5,7 +5,12 @@ Answer the following questions and provide the SQL queries used to find the answ
 
 
 SQL Queries:
-
+SELECT totaltransactionrevenue, city, country
+FROM all_sessions
+WHERE totaltransactionrevenue IS NOT NULL
+GROUP BY city, country, totaltransactionrevenue
+ORDER BY totaltransactionrevenue DESC
+LIMIT 10
 
 
 Answer:
@@ -16,7 +21,11 @@ Answer:
 **Question 2: What is the average number of products ordered from visitors in each city and country?**
 
 
-SQL Queries:
+SQL Queries: 
+SELECT all_sessions.city, all_sessions.country, AVG(products.orderedquantity) AS average_products_ordered
+FROM all_sessions
+JOIN products ON all_sessions.productsku = products.sku
+GROUP BY all_sessions.city, all_sessions.country
 
 
 
