@@ -27,7 +27,8 @@ Step 5: QA
 
 
 Challanges
-Lack of time and clear direction with the dataset was the biggest challenge. I had to remove columns from tables that would of been useful if there was sufficient data. Cleaning took up most of the time.
+time constraints and finding alternative methods instead of removing columnns.
+Limitations of data on csv files
 
 Future Goals
 Further investigation on the relationships between the tables to generate more efficient conclusions on sales and website data.
