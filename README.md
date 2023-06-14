@@ -18,17 +18,18 @@ Step 3: Analyse data
 
 Run Queries to find out specifics of the sales and website ussage and how it might coorelate to consumer behaviour.
 
-Step 5: QA
+Step 4: QA
 
 - Perform a data Integrity Check 
 
 - Run Basic queries to check the validity of the data.
+- 
 - Backup and recovery Testing
 
 
 Challanges
 time constraints and finding alternative methods instead of removing columnns.
-Limitations of data on csv files
+Limitations of data from csv files
 
 Future Goals
 Further investigation on the relationships between the tables to generate more efficient conclusions on sales and website data.
