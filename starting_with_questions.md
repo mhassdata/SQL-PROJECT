@@ -18,12 +18,12 @@ LIMIT 5
 
 QUERY TO SEE TOP 5 CITIES WITH HIGHEST REVENUE ON SITE
 
-SELECT cl.country, SUM(a.units_sold * cl.product_price) AS total_revenue
+SELECT cl.city, SUM(a.units_sold * cl.product_price) AS total_revenue
 FROM cleaned_analytics AS a
 JOIN cleaned_sessions AS cl
 ON a.visitid = cl.visit_id
 WHERE a.units_sold IS NOT NULL
-GROUP BY cl.country
+GROUP BY cl.city
 ORDER BY total_revenue DESC 
 LIMIT 5
 
